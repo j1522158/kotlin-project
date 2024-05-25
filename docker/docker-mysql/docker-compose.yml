@@ -1,9 +1,9 @@
 version: "3"
 services:
   mysql:
-    build: ./mysql/db    #Dockerfileからビルドする
+    build: ./mysql    # ビルドに使うDockerfileのpath
     volumes:
-      - ./mysql/DB:/docker-entrypoint-initdb.d  #初期データをマウントする場所
-    image: original_mysql_world # イメージの名前
+      - ./mysql/DB:/docker-entrypoint-initdb.d  # 初期データをマウントする場所
+    image: original_mysql_world # Docker-imagesの名前
     environment:
-      - MYSQL_ROOT_PASSWORD=kotlin-project   #コンテナ内のMySQLを起動する際のパスワードを設定
+      - MYSQL_ROOT_PASSWORD=kotlin-project # コンテナ内のMySQLを起動する際のパスワードを設定
