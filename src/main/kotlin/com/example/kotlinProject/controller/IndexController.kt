@@ -1,23 +1,18 @@
 package com.example.kotlinProject.controller
 
-import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class IndexController {
 
-    @GetMapping("/str")
-    fun home(): String {
+    @GetMapping("/")
+    fun index(): String {
         return "index"
     }
-}
 
-@Controller
-class TestController{
-
-    @GetMapping("/")
+    @GetMapping("/str")
     fun home(): String {
-        return "index"
+        return "String"
     }
 }
