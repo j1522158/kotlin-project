@@ -37,10 +37,8 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
-	// Swagger
-//	implementation("io.springfox:springfox-boot-starter:3.0.0")
-//	implementation("io.springfox:springfox-swagger-ui:3.0.0")
-//	implementation("javax.servlet:javax.servlet-api:4.0.1")
+	// Swagger用 SpringFoxは
+	implementation ("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
 }
 
 tasks.withType<KotlinCompile> {
