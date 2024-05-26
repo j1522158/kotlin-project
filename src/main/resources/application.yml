@@ -15,3 +15,7 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     mode: HTML
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
