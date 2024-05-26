@@ -1,2 +1,17 @@
 server:
   port: 18080
+
+spring:
+  application:
+    name: kotlinProject
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: capg52jp
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
