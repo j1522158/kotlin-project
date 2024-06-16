@@ -37,11 +37,14 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
-	// Swagger用 SpringFoxはSpring3系には未対応
+	// Swagger SpringFoxはSpring3系には未対応
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
-
-	// Okio用
+	// Okio
 	implementation("com.squareup.okio:okio:3.4.0")
+	// Coroutines
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
+	// Arrow
+	implementation("io.arrow-kt:arrow-core")
 }
 
 tasks.withType<KotlinCompile> {
