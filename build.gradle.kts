@@ -39,6 +39,9 @@ dependencies {
 
 	// Swagger用 SpringFoxはSpring3系には未対応
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
+
+	// Okio用
+	implementation("com.squareup.okio:okio:3.4.0")
 }
 
 tasks.withType<KotlinCompile> {
